@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact White Water Rafting company - get in touch with us for inquiries, reservations, or website suggestions.">
+    <meta name="author" content="Samuel Emeka Innocent">
+    <title>Contact Us | Manny and Dreams Rafting</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles/rafting.css">
+</head>
+<body>
+    <header>
+        <img src="images/logo main.jpg" alt="Rafting Company Logo" class="logo">
+        <h1>Manny and Dreams Rafting</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="trips.html">Trips</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="contact-container">
+            <section class="company-info">
+                <h2>Contact Information</h2>
+                <div class="contact-details">
+                    <p><strong>Address:</strong> 321 Kings Road, Rapids City, RC 12345</p>
+                    <p><strong>Phone:</strong> (221) 321-7654</p>
+                    <p><strong>Email:</strong> info@mannyanddreamsrafting.com</p>
+                </div>
+                <div class="map-container">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.215209132336!2d-73.98784492423908!3d40.74844047138938!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c259a9b3117469%3A0xd134e199a405a163!2sEmpire%20State%20Building!5e0!3m2!1sen!2sus!4v1712100000000!5m2!1sen!2sus" width="600" height="450" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </section>
+
+            <section class="employee-profiles">
+                <h2>Our Team</h2>
+                <div class="employees">
+                    <figure>
+                        <img src="images/ec1.jpeg" alt="Elena Clark - Customer Service">
+                        <figcaption>Elena Clark<br>Customer Service</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="images/em1.jpg" alt="Edwin Mathews - Trip Coordinator">
+                        <figcaption>Edwin Mathews<br>Trip Coordinator</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="images/gs1.jpg" alt="Gloria Simmons - Reservations">
+                        <figcaption>Gloria Simmons<br>Reservations</figcaption>
+                    </figure>
+                </div>
+            </section>
+
+            <section class="contact-form">
+                <h2>Send Us a Message</h2>
+                <form action="https://httpbin.org/post" method="post">
+                    <div class="form-group">
+                        <label for="name">Your Name:</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Your Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Purpose of Message:</label>
+                        <div class="radio-options">
+                            <input type="radio" id="general" name="purpose" value="General Inquiry" checked>
+                            <label for="general">General Inquiry</label>
+                            
+                            <input type="radio" id="reservation" name="purpose" value="Reservation Question">
+                            <label for="reservation">Reservation Question</label>
+                            
+                            <input type="radio" id="suggestion" name="purpose" value="Website Suggestion">
+                            <label for="suggestion">Website Suggestion</label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Your Message:</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    <div class="form-group">
+                        <input type="checkbox" id="newsletter" name="newsletter" value="yes">
+                        <label for="newsletter">Please subscribe me to the monthly newsletter</label>
+                    </div>
+                    <button type="submit" class="submit-btn">Send Message</button>
+                </form>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Manny and Dreams Rafting | Designed by Eric Ejembi</p>
+        <div class="social-links">
+            <a href="https://facebook.com" target="_blank"><img src="images/fb icon.png" alt="Facebook"></a>
+            <a href="https://twitter.com" target="_blank"><img src="images/x icon.png" alt="Twitter"></a>
+            <a href="https://instagram.com" target="_blank"><img src="images/ig icon.png" alt="Instagram"></a>
+        </div>
+        <p><a href="https://app.moqups.com/AVoKL8109kunH8yATsPojrsubKYzxr09/view/page/ad64222d5" target="_blank">View Contact Page Wireframe</a></p>
+    </footer>
+</body>
+</html>
