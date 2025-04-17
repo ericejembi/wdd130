@@ -1,32 +1,78 @@
 <!DOCTYPE html>
-<html lang="en-US">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Eric Ejembi | WDD 130</title>
-        <meta name="description" content="This is the web page of Eric Ejembi. Here, I would be carrying you along with progress on my WDD130 project.">
-        <meta name="author" content="Eric Ejembi.">
-        <link rel="stylesheet" href="styles/styles.css">
-    </head>
-    <body>
-        <header>
-            <nav>
-                <a href="#">Home</a>
-                <a href="wwr/">Rafting Website</a>
-            </nav>
-        </header>
-        <main>
-            <h1>Eric Ejembi | WDD 130</h1>
-            <img src="images/profile.jpg" alt="Hello, my name is Eric Ejembi" width="200" />
-            <p>Hello! My name is Eric Ejembi and I am from Lagos, Nigeria. I am a lover of nature.</p>
-        </main>
-        <aside>
-            <h2>Makurdi</h2>
-            <img src="images/makurdi.jpg" alt="Food Basket of the Nation" width="200" />
-            <p>In the heart of Benue State, Makurdi, a city nestled along the Benue River, pulsed with a unique rhythm, a blend of old traditions and modern aspirations, where the echoes of history mingled with the sounds of daily life. The Benue River, a lifeline for the city, shaped its identity, with its banks serving as a meeting place for locals and a source of sustenance. Makurdi's population, a mix of Tiv people, Idoma people and other ethnic groups, contributed to a rich cultural landscape, evident in the vibrant markets, traditional dances, and local cuisines. Makurdi remained a place of hope, where dreams were nurtured, and where people came together to build a brighter tomorrow.</p>
-        </aside>
-        <footer>
-            <p>©2025 🌴Eric Ejembi🌴 Lagos, Nigeria</p>
-        </footer>
-    </body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Experience thrilling white water rafting adventures with Mountain Rapids. Perfect for families, groups, and adventure seekers.">
+    <title>Mountain Rapids - Premier White Water Rafting Adventures</title>
+    <link rel="stylesheet" href="styles/rafting.css">
+</head>
+<body>
+    <header class="hero">
+        <img src="images/hero1.jpg" alt="Exciting group rafting adventure on wild river">
+        <div class="hero-content">
+            <h1>Mountain Rapids Adventure</h1>
+            <p>Experience nature's wildest waters with expert guides</p>
+        </div>
+        <nav aria-label="Main navigation">
+            <ul>
+                <li><a href="index.html" class="active" aria-current="page">Home</a></li>
+                <li><a href="trips.html">Our Trips</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="newsletter" aria-labelledby="newsletter-heading">
+            <h2 id="newsletter-heading">Join Our Adventure Community</h2>
+            <form action="#" method="post">
+                <div class="form-group">
+                    <label for="name">Full Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <button type="submit" class="btn">Get Adventure Updates</button>
+            </form>
+        </section>
+
+        <section class="grid-container" aria-labelledby="features-heading">
+            <h2 id="features-heading" class="visually-hidden">Our Features</h2>
+            <article class="grid-item">
+                <img src="images/adv1.jpg" alt="Group enjoying rafting adventure" loading="lazy">
+                <h3>Unforgettable Experiences</h3>
+                <p>Create memories that last a lifetime with our expert guides and carefully planned routes.</p>
+            </article>
+            <article class="grid-item">
+                <img src="images/safety1.jpg" alt="Safety equipment demonstration" loading="lazy">
+                <h3>Safety First</h3>
+                <p>Top-rated safety equipment and certified instructors for your peace of mind.</p>
+            </article>
+            <article class="grid-item">
+                <img src="images/beaut1.jpg" alt="Beautiful river canyon scenery" loading="lazy">
+                <h3>Stunning Locations</h3>
+                <p>Explore breathtaking natural landscapes only accessible by river.</p>
+            </article>
+        </section>
+
+        <section class="cta" aria-labelledby="cta-heading">
+            <h2 id="cta-heading">Ready for Adventure?</h2>
+            <p>Browse our exciting trip packages and book your adventure today!</p>
+            <a href="trips.html" class="btn">Explore Trip Options</a>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Mountain Rapids | <a href="site-plan.html">Site Plan</a></p>
+        <div class="social">
+            <a href="https://facebook.com" aria-label="Facebook"><img src="images/fb icon.png" alt="Facebook icon" width="32" height="32" loading="lazy"></a>
+            <a href="https://twitter.com" aria-label="Twitter"><img src="images/x icon.png" alt="Twitter icon" width="32" height="32" loading="lazy"></a>
+            <a href="https://instagram.com" aria-label="Instagram"><img src="images/ig icon.png" alt="Instagram icon" width="32" height="32" loading="lazy"></a>
+        </div>
+    </footer>
+</body>
 </html>
